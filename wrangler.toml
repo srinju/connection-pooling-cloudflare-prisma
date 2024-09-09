@@ -11,13 +11,8 @@ compatibility_flags = ["nodejs_compat"]
 # [placement]
 # mode = "smart"
 
-# Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
-# Docs:
-# - https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
-# Note: Use secrets to store sensitive data.
-# - https://developers.cloudflare.com/workers/configuration/secrets/
-# [vars]
-# MY_VARIABLE = "production_value"
+[vars]
+DATABASE_URL = "prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiMTE5YmFiNjAtZWVhYy00MGMyLThiNjItOWQzZWVjMjg1OTgzIiwidGVuYW50X2lkIjoiNDYzNzI5NjA1MDA2ZTk3MjNkNzdkOTVhMTQ4NWE0NjViMGE4NzUzMGI4ZGVjYjEyMjJhNTRmMzI1ZmU0NDc2YyIsImludGVybmFsX3NlY3JldCI6IjI2YjMzYWZhLTJhNTYtNDVkNi05NTJjLWI3ZmMzNGRiMWM0NyJ9.4JzUgnR6fXaU56wCakf_d4q0i6gpKEAPae5VM4c2POc"
 
 # Bind the Workers AI model catalog. Run machine learning models, powered by serverless GPUs, on Cloudflare’s global network
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#workers-ai
